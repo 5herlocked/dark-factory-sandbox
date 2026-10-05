@@ -11,4 +11,8 @@ function multiply(a, b) {
   return a * b;
 }
 
-module.exports = { add, subtract, multiply };
+function power(base, exponent) {
+  return base ** exponent;
+}
+
+module.exports = { add, subtract, multiply, power };
