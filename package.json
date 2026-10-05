@@ -1,0 +1,9 @@
+{
+  "name": "dark-factory-sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Throwaway target repo for the Dark Factory agent sandbox blueprint",
+  "scripts": {
+    "test": "node test/index.test.js"
+  }
+}
