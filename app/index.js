@@ -3,4 +3,16 @@ function add(a, b) {
   return a + b;
 }
 
-module.exports = { add };
+function gcd(a, b) {
+  if (a < 0 || b < 0) {
+    throw new RangeError("gcd requires non-negative integers");
+  }
+  while (b !== 0) {
+    const temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+module.exports = { add, gcd };
