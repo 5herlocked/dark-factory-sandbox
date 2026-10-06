@@ -3,4 +3,12 @@ function add(a, b) {
   return a + b;
 }
 
-module.exports = { add };
+function isEven(n) {
+  return n % 2 === 0;
+}
+
+function isOdd(n) {
+  return n % 2 !== 0;
+}
+
+module.exports = { add, isEven, isOdd };
