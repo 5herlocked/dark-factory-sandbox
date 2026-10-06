@@ -11,4 +11,8 @@ function isOdd(n) {
   return n % 2 !== 0;
 }
 
-module.exports = { add, isEven, isOdd };
+function negate(n) {
+  return n === 0 ? 0 : -n;
+}
+
+module.exports = { add, isEven, isOdd, negate };
