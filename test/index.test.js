@@ -8,6 +8,11 @@ assert.equal(m.clamp(15, 0, 10), 10);
 assert.equal(m.clamp(-3, 0, 10), 0);
 assert.equal(m.clamp(5, 0, 10), 5);
 
+assert.equal(m.sum([]), 0);
+assert.equal(m.sum([1, 2, 3]), 6);
+assert.equal(m.sum([10, -5, 3]), 8);
+assert.equal(m.sum([42]), 42);
+
 assert.equal(m.average([2, 4, 6]), 4);
 assert.equal(m.average([1, 2, 3, 4, 5]), 3);
 assert.equal(m.average([10]), 10);

@@ -9,12 +9,15 @@ function clamp(x, lo, hi) {
   return x;
 }
 
+function sum(nums) {
+  return nums.reduce((acc, val) => acc + val, 0);
+}
+
 function average(nums) {
   if (nums.length === 0) {
     throw new RangeError("Cannot calculate average of empty array");
   }
-  const sum = nums.reduce((acc, val) => acc + val, 0);
-  return sum / nums.length;
+  return sum(nums) / nums.length;
 }
 
-module.exports = { add, clamp, average };
+module.exports = { add, clamp, sum, average };
