@@ -3,4 +3,18 @@ function add(a, b) {
   return a + b;
 }
 
-module.exports = { add };
+function isEven(n) {
+  if (!Number.isInteger(n)) {
+    throw new TypeError("Argument must be an integer");
+  }
+  return n % 2 === 0;
+}
+
+function isOdd(n) {
+  if (!Number.isInteger(n)) {
+    throw new TypeError("Argument must be an integer");
+  }
+  return n % 2 !== 0;
+}
+
+module.exports = { add, isEven, isOdd };
